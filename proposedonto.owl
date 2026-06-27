@@ -1,0 +1,844 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto//"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto//"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#BelongsToSubDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#BelongsToSubDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#belongsToDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#belongsToDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#belongsToThing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#belongsToThing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#communicatesThrough -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#communicatesThrough">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#describes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasActuator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasDevice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasDevice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasSubDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasSubDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#measures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#measures">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#producedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#producesData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#producesData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#producesData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usesDevice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usesDevice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usesProtocol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usesProtocol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Label">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Timestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Unity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Unity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#belongsToDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasSubDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#producedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#belongsToDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasSensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#hasDevice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#usedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#controls"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Phenomena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#locatedin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_DoorLock_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_DoorLock_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_Heater_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_Heater_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_LightSwitch_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_LightSwitch_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_WaterValve_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Actuator_WaterValve_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#AmbiantAssistingLiving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#AmbiantAssistingLiving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Boiler_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Boiler_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device_Arduino_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device_Arduino_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device_ESP32_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device_ESP32_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device_RaspberryPi_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device_RaspberryPi_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#EnergyManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#EnergyManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Fridge_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Fridge_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Gateway_Zigbee_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Gateway_Zigbee_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Device"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#HealthMonitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#HealthMonitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#IrrigationControl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#IrrigationControl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Bedroom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Bedroom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_BuildingA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_BuildingA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Floor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Floor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Garden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Garden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Kitchen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_Kitchen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_LivingRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location_LivingRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_BLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_BLE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_HTTP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_HTTP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_MQTT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_MQTT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_Zigbee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Protocol_Zigbee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#CommunicationProtocol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Pump_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Pump_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SubDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_CO2_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_CO2_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Electrical_conductivity_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Electrical_conductivity_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Humidity_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Humidity_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Light_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Light_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Motion_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Motion_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_PH_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_PH_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Temperature_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Sensor_Temperature_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartAgriculture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartAgriculture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartHome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartHome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartIndustry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartIndustry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#ApplicationDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartLamp_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#SmartLamp_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Technician_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User_Technician_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/data_format_heterogeneity_proposed_onto/#User"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
