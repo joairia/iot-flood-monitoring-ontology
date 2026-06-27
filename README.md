@@ -21,8 +21,6 @@ The purpose of this repository is to make the semantic-web resources used in the
 │   ├── Q3_observations_by_sensor_type.rq
 │   └── Q4_observations_by_phenomenon_and_time.rq
 │
-├── results/
-│   └── sparql_query_results.csv
 │
 └── README.md
 ```
